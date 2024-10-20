@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:padding="16dp"
+    tools:context="com.example.TugasPertemuan_8.LoginFragment">
+
+    <!-- TODO: Update blank fragment layout -->
+    <TextView
+        android:id="@+id/text_login"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:layout_marginTop="150dp"
+        android:textAlignment="center"
+        android:text="Login" />
+
+    <RelativeLayout
+        android:id="@+id/user_isi"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/text_login"
+        android:layout_marginTop="30dp"
+        android:background="@drawable/rounded_background"
+        android:padding="14dp">
+
+        <ImageView
+            android:id="@+id/iconUser"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/baseline_person"/>
+
+        <EditText
+            android:id="@+id/etUser"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_toEndOf="@id/iconUser"
+            android:layout_marginStart="12dp"
+            android:hint="Username"
+            android:background="@android:color/transparent" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/password_isi"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/user_isi"
+        android:layout_marginTop="30dp"
+        android:background="@drawable/rounded_background"
+        android:padding="14dp">
+
+        <ImageView
+            android:id="@+id/iconPassword"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/baseline_lock"/>
+
+        <EditText
+            android:id="@+id/etPassword"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_toEndOf="@id/iconPassword"
+            android:layout_marginStart="12dp"
+            android:inputType="textPassword"
+            android:hint="Password"
+            android:background="@android:color/transparent" />
+    </RelativeLayout>
+
+    <CheckBox
+        android:id="@+id/checkboxs"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/password_isi"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/password_isi"
+        android:layout_marginTop="15dp"
+        android:layout_marginStart="40dp"
+        android:text="Remember Me"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_alignParentEnd="true"
+        android:text="@string/forget"
+        android:layout_below="@+id/password_isi"
+        />
+
+    <Button
+        android:id="@+id/btn_login"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="80dp"
+        android:layout_below="@+id/checkboxs"
+        android:text="Login"
+        android:backgroundTint="@color/blue"/>
+
+    <TextView
+        android:id="@+id/register"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/btn_login"
+        android:text="@string/newmember"
+        android:layout_marginTop="20dp"
+        android:gravity="center"/>
+
+</RelativeLayout>

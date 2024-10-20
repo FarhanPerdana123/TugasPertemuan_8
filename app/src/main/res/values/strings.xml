@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">TugasPertemuan_8</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="register">Register</string>
+    <string name="login">Login</string>
+    <string name="text_with_color">By checking the box you agree to our <font color="#0000FF">terms</font> and <font color="#0000FF">conditions</font></string>
+    <string name="punyaAkun">Already Have An Account? <font color="#0000FF">Log in</font></string>
+    <string name="forget"><font color="#0000FF">Forget Password ?</font></string>
+    <string name="newmember">New Member? <font color="#0000FF">Register</font></string>
+</resources>

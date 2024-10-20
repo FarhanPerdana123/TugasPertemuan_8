@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:padding="16dp"
+    tools:context="com.example.TugasPertemuan_8.RegisterFragment">
+
+    <!-- TODO: Update blank fragment layout -->
+    <TextView
+        android:id="@+id/register_text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Register"
+        android:textAlignment="center"
+        android:layout_marginTop="30dp"
+        android:textStyle="bold"
+        android:textSize="24sp" />
+
+    <RelativeLayout
+        android:id="@+id/user_isi"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/register_text"
+        android:layout_marginTop="30dp"
+        android:background="@drawable/rounded_background"
+        android:padding="14dp">
+
+        <ImageView
+            android:id="@+id/iconUser"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/baseline_person"/>
+
+        <EditText
+            android:id="@+id/etUser"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_toEndOf="@id/iconUser"
+            android:layout_marginStart="12dp"
+            android:hint="Username"
+            android:background="@android:color/transparent" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/email_isi"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/user_isi"
+        android:layout_marginTop="30dp"
+        android:background="@drawable/rounded_background"
+        android:padding="14dp">
+
+        <ImageView
+            android:id="@+id/iconEmail"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/baseline_email"/>
+
+        <EditText
+            android:id="@+id/etEmail"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_toEndOf="@id/iconEmail"
+            android:layout_marginStart="12dp"
+            android:hint="Email"
+            android:background="@android:color/transparent" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/phone_isi"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/email_isi"
+        android:layout_marginTop="30dp"
+        android:background="@drawable/rounded_background"
+        android:padding="14dp">
+
+        <ImageView
+            android:id="@+id/iconPhone"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/baseline_phone_24"/>
+
+        <EditText
+            android:id="@+id/etPhone"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_toEndOf="@id/iconPhone"
+            android:layout_marginStart="12dp"
+            android:hint="Phone"
+            android:inputType="number"
+            android:background="@android:color/transparent" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/password_isi"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/phone_isi"
+        android:layout_marginTop="30dp"
+        android:background="@drawable/rounded_background"
+        android:padding="14dp">
+
+        <ImageView
+            android:id="@+id/iconPassword"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/baseline_lock"/>
+
+        <EditText
+            android:id="@+id/etPassword"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_toEndOf="@id/iconPassword"
+            android:layout_marginStart="12dp"
+            android:inputType="textPassword"
+            android:hint="Password"
+            android:background="@android:color/transparent" />
+    </RelativeLayout>
+
+    <CheckBox
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/password_isi"/>
+
+    <TextView
+        android:id="@+id/terms"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:layout_marginStart="40dp"
+        android:textSize="13sp"
+        android:layout_below="@id/password_isi"
+        android:text="@string/text_with_color"/>
+
+    <Button
+        android:id="@+id/btn_register"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="80dp"
+        android:layout_below="@+id/terms"
+        android:text="Register"
+        android:backgroundTint="@color/blue"/>
+
+    <TextView
+        android:id="@+id/akun"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/btn_register"
+        android:text="@string/punyaAkun"
+        android:layout_marginTop="10dp"
+        android:gravity="center"/>
+
+
+</RelativeLayout>

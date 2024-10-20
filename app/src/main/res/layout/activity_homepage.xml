@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    tools:context="com.example.TugasPertemuan_8.Homepage">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAlignment="center"
+        android:textSize="24sp"
+        android:fontFamily="@font/splash"
+        android:textStyle="bold"
+        android:text="HomePage"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:fontFamily="@font/princess_sofia"
+        android:text="Welcome back"
+        android:textAlignment="center"
+        android:textSize="20sp" />
+
+    <TextView
+        android:id="@+id/user_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAlignment="center"
+        android:fontFamily="@font/princess_sofia"
+        android:layout_marginTop="-27dp"
+        android:layout_marginStart="80dp"
+        android:textColor="@color/blue"
+        android:textSize="20sp"
+        android:text=""/>
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:src="@drawable/dashboard_1"/>
+
+    <TextView
+        android:id="@+id/text_suasana"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:fontFamily="@font/poppins"
+        android:textSize="20sp"
+        android:text="How are you doing today?"/>
+
+    <ImageButton
+        android:id="@+id/btn_bad"
+        android:layout_width="100dp"
+        android:layout_height="50dp"
+        android:layout_marginEnd="60dp"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/button_1"
+        android:contentDescription="TODO"
+        android:src="@drawable/sadge"
+        android:backgroundTint="@color/red"/>
+    <ImageButton
+        android:id="@+id/btn_smile"
+        android:layout_width="100dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="60dp"
+        android:layout_marginTop="-48dp"
+        android:contentDescription="TODO"
+        android:src="@drawable/pajamas_smile"
+        android:background="@drawable/button_2"
+        android:layout_below="@id/btn_bad"
+        android:backgroundTint="@color/green"/>
+
+</LinearLayout>
